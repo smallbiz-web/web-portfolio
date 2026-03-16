@@ -433,3 +433,15 @@ color: #555;
 .hero-button {
   margin-top:24px;
 }
+
+.work-image img{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.work-image img:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
