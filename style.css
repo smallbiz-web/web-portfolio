@@ -14,6 +14,11 @@
   /* スムーズスクロール：メニュークリック時になめらかに移動 */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
+
+  [id] {
+    scroll-margin-top: 96px;
   }
 
   /* ========================================
@@ -115,14 +120,11 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 80px 24px;
+    background: #faf8f5;
   }
 
-  .section:nth-of-type(even) {
+  .section-alt {
     background: #ffffff;
-  }
-  
-  .section:nth-of-type(odd) {
-    background: #faf8f5;
   }
 
   .section-title {
@@ -152,6 +154,10 @@
   ======================================== */
   .skills {
     background: #f5f2eb;
+  }
+
+  .price {
+    background: #ffffff;
   }
 
   .skill-list {
@@ -379,7 +385,7 @@
   /* ========================================
  共通ボタンスタイル
 ======================================== */
-.btn-primary {
+ .btn-primary {
   display: inline-block;
   padding: 14px 28px;
   background: linear-gradient(135deg, #22c55e, #16a34a);
@@ -397,44 +403,26 @@
   box-shadow: 0 12px 28px rgba(34,197,94,0.4);
 }
 
-.flow {
-padding: 80px 20px;
-background-color: #f5f2eb;
-}
-
-.flow h2 {
-text-align: center;
-margin-bottom: 50px;
-font-size: 28px;
-}
-
-.flow-steps {
-max-width: 900px;
-margin: 0 auto;
+.section.flow {
+  background-color: #f5f2eb;
 }
 
 .flow-item {
-background: #ffffff;
-padding: 25px;
-margin-bottom: 20px;
-border-left: 4px solid #2c3e50;
-border-radius: 8px;
-}
-
-.step-number {
-font-size: 14px;
-color: #2c3e50;
-font-weight: bold;
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 4px solid #2c3e50;
+  border-radius: 8px;
 }
 
 .flow-item h3 {
-margin: 10px 0;
-font-size: 18px;
+  margin: 10px 0;
+  font-size: 18px;
 }
 
 .flow-item p {
-line-height: 1.7;
-color: #555;
+  line-height: 1.7;
+  color: #555;
 }
 
 .hero-button {
@@ -443,7 +431,7 @@ color: #555;
 
 .work-image img{
   width:100%;
-  height: 100%;       /* ←追加 */
+  height: 100%;
   object-fit: cover;
   border-radius:10px;
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
@@ -453,4 +441,12 @@ color: #555;
 .work-image img:hover{
   transform:translateY(-5px);
   box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #6b9b8a;
+  outline-offset: 3px;
 }
