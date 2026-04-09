@@ -452,6 +452,18 @@
   gap: 20px;
 }
 
+.work-content a:link {
+  color: #2C3E50;
+}
+
+.work-content a:visited {
+  color: #2C3E50;
+}
+
+.work-content a:hover {
+  text-decoration: underline;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
