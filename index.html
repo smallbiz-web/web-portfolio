@@ -171,13 +171,19 @@ Web制作を行っています。
           <div class="work-image">
             <img src="work2.png" alt="カフェのホームページ">
           </div>
+        
           <div class="work-content">
-            <h3>地域カフェwの集客用ホームページ</h3>
+            <h3>
+              <a href="リンクURL" target="_blank" rel="noopener noreferrer">
+                地域カフェの集客用ホームページ
+              </a>
+            </h3>
+        
             <p>
               地域のお客様に来店してもらうことを目的に制作。<br>
               メニュー・営業時間・アクセス情報を分かりやすく整理し、
               スマホからでも迷わず来店につながる構成にしました。
-              </p>
+            </p>
           </div>
         </div>
       </a>
@@ -230,35 +236,41 @@ Web制作を行っています。
   ======================================== -->
   <section class="section section-alt contact-section" id="contact">
     <h2 class="section-title">お問い合わせ</h2>
-
-    <p>小さなお店や個人事業主の方のホームページ制作をお手伝いしています。</p>
-<p>「何から始めればいいか分からない」という段階でも大丈夫です。</p>
-<p>まずはお気軽にご相談ください。</p>
-    <p style="text-align:center; margin-bottom:20px;">
-      ココナラからのご相談も受け付けています
+  
+    <p style="text-align:center; font-weight:bold;">
+      ご相談はココナラ経由でお願いしております
     </p>
-    
+  
     <p style="text-align:center;">
-      <a href="https://coconala.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
-        ココナラで相談する
+      恐れ入りますが、規約により直接のメール対応は行っておりません。<br>
+      以下のボタンからココナラにてお気軽にご相談ください。
+    </p>
+  
+    <p style="text-align:center; margin: 20px 0;">
+      <a href="https://coconala.com/あなたのURL" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        まずはココナラで無料相談してみる
       </a>
     </p>
-    <a href="mailto:your-email@example.com" class="contact-email">your-email@example.com</a>
-    <form class="contact-form" action="#" method="post">
+  
+    <form onsubmit="return false;" class="contact-form">
       <div>
-        <label for="name">お名前</label>
-        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+        <label>お名前</label>
+        <input type="text" placeholder="山田 太郎" disabled>
       </div>
       <div>
-        <label for="email">メールアドレス</label>
-        <input type="email" id="email" name="email" required placeholder="example@email.com">
+        <label>メールアドレス</label>
+        <input type="email" placeholder="example@email.com" disabled>
       </div>
       <div>
-        <label for="message">お問い合わせ内容</label>
-        <textarea id="message" name="message" required placeholder="お気軽にご連絡ください"></textarea>
+        <label>お問い合わせ内容</label>
+        <textarea placeholder="お気軽にご相談ください" disabled></textarea>
       </div>
-      <button type="submit" class="btn-primary">送信する</button>
+      <button type="submit" class="btn-primary" disabled>送信する</button>
     </form>
+  
+    <p style="text-align:center; margin-top:15px;">
+      ※ご相談はココナラからお願いいたします
+    </p>
   </section>
 
   
