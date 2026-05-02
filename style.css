@@ -235,6 +235,12 @@
     margin-bottom: 8px;
   }
 
+  .work-title {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+
   .work-content p {
     font-size: 0.875rem;
     color: #5a6b5f;
@@ -291,6 +297,30 @@
   .contact-section {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .section-cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .contact-note-strong {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contact-note {
+    text-align: center;
+  }
+
+  .contact-cta {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .contact-note-foot {
+    text-align: center;
+    margin-top: 15px;
   }
 
   /* メールリンクスタイル */
@@ -444,24 +474,6 @@
 .work-image img:hover{
   transform:translateY(-5px);
   box-shadow:0 15px 35px rgba(0,0,0,0.2);
-}
-
-.works-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2列 */
-  gap: 20px;
-}
-
-.work-content a:link {
-  color: #2C3E50;
-}
-
-.work-content a:visited {
-  color: #2C3E50;
-}
-
-.work-content a:hover {
-  text-decoration: underline;
 }
 
 a:focus-visible,
